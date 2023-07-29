@@ -1,6 +1,6 @@
 # Project Architecture
 
-https://github.com/to1step/backend/assets/77993709/9dc143e1-350b-4735-abe6-f96e64ce1c44
+<img src="https://github.com/gkqkehs7/to1step-Backend/assets/77993709/7dffea09-46a1-4c9e-a858-ea8b4f63e6ac" />
 
 <br/>
 
