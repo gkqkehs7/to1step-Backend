@@ -4,7 +4,7 @@
 
 <br/>
 
-## Node.js (v16)
+## 🔍 Node.js (v16)
 
 ### nvm을 통한 버전 일치
 
@@ -72,13 +72,13 @@ REST의 원칙을 지켜 간결하고 가독성이 좋은 API를 설계하였고
 
 <br/>
 
-## Typescript (v5.1.3)
+## 🔍 Typescript (v5.1.3)
 
 `Node.js` 는 빠르고 간단하게 API를 만들 수 있다는 것에 강점이 있다고 생각합니다. 하지만 서버는 안정성이 최우선이므로, `TypeScript`를 통해 동적타입 언어인 `Javascript` 에서는 검사하지 못했던 변수, 함수, 인터페이스 등의 타입 오류를 사전에 최대한 차단하였고. 이로 인해 런타임 시점의 타입 관련 버그를 사전에 방지 하였습니다.
 
 <br/>
 
-## Prettier
+## 🔍 Prettier
 
 코드 스타일을 일관성 있게 유지하고 흔히 발생하는 실수나 잠재적인 오류를 사전에 감지하기 위해 `prettier`를 사용하였습니다.
 
@@ -92,7 +92,7 @@ REST의 원칙을 지켜 간결하고 가독성이 좋은 API를 설계하였고
 
 <br/>
 
-## Husky
+## 🔍 Husky
 
 오류가 있는 코드나 lint에 맞지 않는 코드가 올라와 develop에 merge되는 것을 막기위해 `Husky` 를 사용하여 commit과 push에 정책을 적용했습니다.
 
@@ -117,7 +117,7 @@ REST의 원칙을 지켜 간결하고 가독성이 좋은 API를 설계하였고
 
 <br/>
 
-## Docker
+## 🔍 Docker
 
 ### 일관성 있는 배포
 
@@ -147,7 +147,7 @@ Docker는 호스트 OS와 리소스를 공유하여 실행되어 가상화 방�
 
 <br/>
 
-## Github action
+## 🔍 Github action
 
 ### CI
 
@@ -169,7 +169,7 @@ Docker는 호스트 OS와 리소스를 공유하여 실행되어 가상화 방�
 
 <br/>
 
-## Filebeat
+## 🔍 Filebeat
 
 ### Filebeat를 이용한 로그 서빙
 
@@ -179,7 +179,7 @@ Winston.js로 기록한 우리 서버의 로그들을 기록한 폴더를 volume
 
 <br/>
 
-## Nginx
+## 🔍 Nginx
 
 ### WAS의 부담 줄이기
 
