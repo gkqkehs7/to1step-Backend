@@ -180,7 +180,7 @@ Docker는 호스트 OS와 리소스를 공유하여 실행되어 가상화 방�
 
 Winston.js로 기록한 우리 서버의 로그들을 기록한 폴더를 volume에 연결하고  `Filebeat` 또한 컨테이너로 실행한 다음 volume으로 연결하여 로그가 쌓일때마다 Filebeat가 Elasticsearch로 우리들의 로그를 보내게 만들었습니다.
 
-[Filebeat를 이용해 서버 로그 서빙하기](https://velog.io/@gkqkehs7/Docker-volume%EC%99%80-Filebeat%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%98%EC%97%AC-%EC%84%9C%EB%B2%84-%EB%A1%9C%EA%B7%B8-%EC%88%98%EC%A7%91%5C)
+[Filebeat를 이용해 서버 로그 서빙하기](https://velog.io/@gkqkehs7/Docker-volume%EC%99%80-Filebeat%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%98%EC%97%AC-%EC%84%9C%EB%B2%84-%EB%A1%9C%EA%B7%B8-%EC%88%98%EC%A7%91)
 
 <br/>
 
