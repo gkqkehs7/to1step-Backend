@@ -29,7 +29,7 @@ REST의 원칙을 지켜 간결하고 가독성이 좋은 API를 설계하였고
 
 ### Controller와 Service의 역할 분리
 
-`Controller`와 `Service`의 역할을 철저히 분리하여 `Controller`는 클라이언트 요청을 처리하고 응답을 반환하는 역할을 수행하도록 하였고, `Service`는 비즈니스 로직을 처리하는 역할을 수행하도록 하였다.
+`Controller`와 `Service`의 역할을 철저히 분리하여 `Controller`는 클라이언트 요청을 처리하고 응답을 반환하는 역할을 수행하도록 하였고, `Service`는 비즈니스 로직을 처리하는 역할을 수행하도록 하였습니다.
 
 **[Controller와 Service의 역할 분리](https://velog.io/@gkqkehs7/Controller%EC%99%80-Service-%EB%B6%84%EB%A6%AC)**
 
