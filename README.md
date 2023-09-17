@@ -15,7 +15,7 @@ https://github.com/to1step/backend
 
 팀원들이 각자의 로컬에서 개발을 하였기 때문에, 각자 데스크톱의 `node.js`버전이 달라 발생하는 에러를 방지하기 위해 `nvm`을 통해 `node.js`의 버전을 16으로 일치시켰습니다.
 
-[✏️ nvm을 이용한 node.js 버전 관리](https://velog.io/@gkqkehs7/nvm%EC%9D%84-%ED%86%B5%ED%95%9C-node.js-%EB%B2%84%EC%A0%BC-%EA%B4%80%EB%A6%AC)
+✏️ [nvm을 이용한 node.js 버전 관리](https://velog.io/@gkqkehs7/nvm%EC%9D%84-%ED%86%B5%ED%95%9C-node.js-%EB%B2%84%EC%A0%BC-%EA%B4%80%EB%A6%AC)
 
 <br/>
 
