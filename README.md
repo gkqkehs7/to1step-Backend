@@ -23,7 +23,7 @@ https://github.com/to1step/backend
 
 REST의 원칙을 지켜 간결하고 가독성이 좋은 API를 설계하였고, UI에 묶이지 않는 API를 설계하여 API의 확장성을 높였습니다.
 
-[REST API란?](https://velog.io/@gkqkehs7/REST-API%EB%9E%80) | [REST 원칙을 지키며 API를 설계하자](https://velog.io/@gkqkehs7/%EB%8B%A4%EB%A5%B8-%EC%82%AC%EB%9E%8C%EC%9D%B4-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0-%ED%9E%98%EB%93%A0-%EC%9E%98%EB%AA%BB%EB%90%9C-API-%EC%84%A4%EA%B3%84) | [API는 UI에 종속되지 않아야 한다](https://velog.io/@gkqkehs7/API%EB%8A%94-ui%EC%97%90-%EC%A2%85%EC%86%8D%EB%90%98%EC%A7%80-%EC%95%8A%EC%95%84%EC%95%BC%ED%95%9C%EB%8B%A4)
+✏️ [REST API란?](https://velog.io/@gkqkehs7/REST-API%EB%9E%80) | ✏️ [REST 원칙을 지키며 API를 설계하자](https://velog.io/@gkqkehs7/%EB%8B%A4%EB%A5%B8-%EC%82%AC%EB%9E%8C%EC%9D%B4-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0-%ED%9E%98%EB%93%A0-%EC%9E%98%EB%AA%BB%EB%90%9C-API-%EC%84%A4%EA%B3%84) | ✏️ [API는 UI에 종속되지 않아야 한다](https://velog.io/@gkqkehs7/API%EB%8A%94-ui%EC%97%90-%EC%A2%85%EC%86%8D%EB%90%98%EC%A7%80-%EC%95%8A%EC%95%84%EC%95%BC%ED%95%9C%EB%8B%A4)
 
 <br/>
 
@@ -31,7 +31,7 @@ REST의 원칙을 지켜 간결하고 가독성이 좋은 API를 설계하였고
 
 `Controller`와 `Service`의 역할을 철저히 분리하여 `Controller`는 클라이언트 요청을 처리하고 응답을 반환하는 역할을 수행하도록 하였고, `Service`는 비즈니스 로직을 처리하는 역할을 수행하도록 하였습니다.
 
-**[Controller와 Service의 역할 분리](https://velog.io/@gkqkehs7/Controller%EC%99%80-Service-%EB%B6%84%EB%A6%AC)**
+✏️ [Controller와 Service의 역할 분리](https://velog.io/@gkqkehs7/Controller%EC%99%80-Service-%EB%B6%84%EB%A6%AC)
 
 <br/>
 
@@ -57,7 +57,7 @@ REST의 원칙을 지켜 간결하고 가독성이 좋은 API를 설계하였고
 
 서버에서 발생할 수 있는 에러를 `BadRequestError` , `UnauthorizedError` , `ForbiddenError` , `InternalServerError` , `NotFoundError` 로 나누어 class화 하고 Front-end가 처리할 수 있는 에러들에 대해선 ErrorCode들을 미리 enum type으로 정의해 둔 다음, 해당 에러에 맞는 class로 mapping하여  Front-end와 소통하였습니다.
 
-[Custom Error를 이용한 Front-end와의 소통](https://velog.io/@gkqkehs7/Custom-Error%EB%A5%BC-%ED%86%B5%ED%95%9C-front-end%EC%99%80%EC%9D%98-%EC%86%8C%ED%86%B5)
+✏️ [Custom Error를 이용한 Front-end와의 소통](https://velog.io/@gkqkehs7/Custom-Error%EB%A5%BC-%ED%86%B5%ED%95%9C-front-end%EC%99%80%EC%9D%98-%EC%86%8C%ED%86%B5)
 
 <br/>
 
@@ -65,7 +65,7 @@ REST의 원칙을 지켜 간결하고 가독성이 좋은 API를 설계하였고
 
 `Winston.js`를 이용하여 서버에 들어오는 모든 요청, 서버에서 발생하는 모든 에러에 대해 파일로 기록하였습니다.
 
-[Winston.js를 통한 로그 기록하기](https://velog.io/@gkqkehs7/Winston%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%9C-logger)
+✏️ [Winston.js를 통한 로그 기록하기](https://velog.io/@gkqkehs7/Winston%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%9C-logger)
 
 <br/>
 
@@ -73,7 +73,7 @@ REST의 원칙을 지켜 간결하고 가독성이 좋은 API를 설계하였고
 
 서버에서 발생하는 Exception Error에 대해 `Discord.js`를 통해 Discord로 메세지를 보내게 하여 바로 대응할 수 있도록 하였고, API소요시간을 계산하여 2000ms 이상 걸리는 API에 대해서 Discord로 메세지를 보내 로직을 개선할 수 있게 하였습니다.
 
-  [API소요시간 계산하기](https://velog.io/@gkqkehs7/API-%EC%86%8C%EC%9A%94%EC%8B%9C%EA%B0%84-%EA%B3%84%EC%82%B0) | [Discord.js를 통한 Error-bot 만들기](https://velog.io/@gkqkehs7/Discord.js%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-Error-bot-%EB%A7%8C%EB%93%A4%EA%B8%B0)
+✏️ [API소요시간 계산하기](https://velog.io/@gkqkehs7/API-%EC%86%8C%EC%9A%94%EC%8B%9C%EA%B0%84-%EA%B3%84%EC%82%B0) | ✏️ [Discord.js를 통한 Error-bot 만들기](https://velog.io/@gkqkehs7/Discord.js%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-Error-bot-%EB%A7%8C%EB%93%A4%EA%B8%B0)
 
 <br/>
 
@@ -118,7 +118,7 @@ REST의 원칙을 지켜 간결하고 가독성이 좋은 API를 설계하였고
 
 `tsc --noEmit` 명령어를 통해 TypeScript 파일을 컴파일하여 JavaScript 파일을 생성하지 않고, 타입 검사만 수행한 다음, 통과하면 push가 되도록 하였습니다.
 
-[Husky를 이용한 git hook 적용하기](https://velog.io/@gkqkehs7/Husky-git-hook-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0)
+✏️ [Husky를 이용한 git hook 적용하기](https://velog.io/@gkqkehs7/Husky-git-hook-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0)
 
 <br/>
 
@@ -134,7 +134,7 @@ Docker 컨테이너가 애플리케이션과 그 실행에 필요한 모든 종�
 
 Docker는 호스트 OS와 리소스를 공유하여 실행되어 가상화 방식에 비해 더 적은 리소스를 소비하기 때문에 우리의 서비스를 Docker로 컨테이너화 하여 더 효율적인 자원 관리와 높은 서버 활용률을 얻을 수 있게 하였습니다.
 
-[Docker란 무엇이고 왜 사용할까?](https://velog.io/@gkqkehs7/%EB%8F%84%EC%BB%A4%EC%9D%98-%EC%9D%B4%EB%AF%B8%EC%A7%80%EC%99%80-%EC%BB%A8%ED%85%8C%EC%9D%B4)
+✏️ [Docker란 무엇이고 왜 사용할까?](https://velog.io/@gkqkehs7/%EB%8F%84%EC%BB%A4%EC%9D%98-%EC%9D%B4%EB%AF%B8%EC%A7%80%EC%99%80-%EC%BB%A8%ED%85%8C%EC%9D%B4)
 
 <br/>
 
@@ -142,7 +142,7 @@ Docker는 호스트 OS와 리소스를 공유하여 실행되어 가상화 방�
 
 `.dockerignore` 에 Docker 이미지를 빌드할 때 포함하지 않을 파일이나 디렉토리를 지정하여, 이미지 크기를 경량화 하였습니다.
 
-[Docker 이미지 경량화 하기](https://velog.io/@gkqkehs7/Docker%EB%A1%9C-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%B9%8C%EB%93%9C-%EB%B0%8F-%EA%B2%BD%EB%9F%89%ED%99%94)
+✏️ [Docker 이미지 경량화 하기](https://velog.io/@gkqkehs7/Docker%EB%A1%9C-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%B9%8C%EB%93%9C-%EB%B0%8F-%EA%B2%BD%EB%9F%89%ED%99%94)
 
 <br/>
 
@@ -170,7 +170,7 @@ Docker는 호스트 OS와 리소스를 공유하여 실행되어 가상화 방�
 
 `Action secrets`에 우리의 환경변수들을 넣어서 이미지가 빌드될때 환경변수로 주입하여 .giitignore에 포함되어 GIthub에 로드 되지 않던 환경변수들을 관리하였습니다.
 
-[Github-action을 통한 CI/CD](https://velog.io/@gkqkehs7/Github-action%EC%9D%84-%ED%86%B5%ED%95%9C-CICD)
+✏️ [Github-action을 통한 CI/CD](https://velog.io/@gkqkehs7/Github-action%EC%9D%84-%ED%86%B5%ED%95%9C-CICD)
 
 <br/>
 
@@ -180,7 +180,7 @@ Docker는 호스트 OS와 리소스를 공유하여 실행되어 가상화 방�
 
 Winston.js로 기록한 우리 서버의 로그들을 기록한 폴더를 volume에 연결하고  `Filebeat` 또한 컨테이너로 실행한 다음 volume으로 연결하여 로그가 쌓일때마다 Filebeat가 Elasticsearch로 우리들의 로그를 보내게 만들었습니다.
 
-[Filebeat를 이용해 서버 로그 서빙하기](https://velog.io/@gkqkehs7/Docker-volume%EC%99%80-Filebeat%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%98%EC%97%AC-%EC%84%9C%EB%B2%84-%EB%A1%9C%EA%B7%B8-%EC%88%98%EC%A7%91)
+✏️ [Filebeat를 이용해 서버 로그 서빙하기](https://velog.io/@gkqkehs7/Docker-volume%EC%99%80-Filebeat%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%98%EC%97%AC-%EC%84%9C%EB%B2%84-%EB%A1%9C%EA%B7%B8-%EC%88%98%EC%A7%91)
 
 <br/>
 
@@ -196,4 +196,4 @@ Winston.js로 기록한 우리 서버의 로그들을 기록한 폴더를 volume
 
 `nginx` 를 이용해 http로 80번 port에 들어온 요청들에 대해서 대리로 받은 다음, 443번 port로 redirect시켜서 보내주고. `reverse-proxy` 를 이용해 4000번에서 작동하고 있는 node.js서버로 요청이 가게 하였습니다. 이렇게 `리버스 프록시는(reverse-proxy)`를 통해 서버를 감추고, SSL/TLS 암호화를 사용하여 데이터를 안전하게 전송할 수 있게 하였습니다.
 
-[Http와 Https 그리고 SSL은 각각 무엇일까?](https://velog.io/@gkqkehs7/HTTP%EC%99%80-HTTPS-%EA%B7%B8%EB%A6%AC%EA%B3%A0-SSL) | [Nginx란 무엇이고 왜 사용할까?](https://velog.io/@gkqkehs7/nginx-web-server-was) | [Nginx 설치 및 Https 적용하기](https://velog.io/@gkqkehs7/nginx-%EC%84%A4%EC%B9%98-%EB%B0%8F-https-%EC%A0%81%EC%9A%A9)
+✏️ [Http와 Https 그리고 SSL은 각각 무엇일까?](https://velog.io/@gkqkehs7/HTTP%EC%99%80-HTTPS-%EA%B7%B8%EB%A6%AC%EA%B3%A0-SSL) | ✏️ [Nginx란 무엇이고 왜 사용할까?](https://velog.io/@gkqkehs7/nginx-web-server-was) | ✏️ [Nginx 설치 및 Https 적용하기](https://velog.io/@gkqkehs7/nginx-%EC%84%A4%EC%B9%98-%EB%B0%8F-https-%EC%A0%81%EC%9A%A9)
