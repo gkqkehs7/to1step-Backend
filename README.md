@@ -49,13 +49,13 @@ REST의 원칙을 지켜 간결하고 가독성이 좋은 API를 설계하였고
 
 ### Day.js를 이용한 시간 통일
 
-저희의 클라우드 서버가 한국에 존재하지 않기 때문에, 모든 시각을 한국 시간으로 통일해 주기위해 날짜 라이브러리를 도입하여야 했는데,  그 중 크기가 작고 가벼워 가장 많이 사용되는 day.js를 채택하였습니다.
+저희의 클라우드 서버가 한국에 존재하지 않기 때문에, 모든 시각을 한국 시간으로 통일해 주기위해 날짜 라이브러리를 도입하여야 했는데, 그 중 크기가 작고 가벼워 가장 많이 사용되는 day.js를 채택하였습니다.
 
 <br/>
 
 ### Cutsom Error를 통한 Front-end와의 소통
 
-서버에서 발생할 수 있는 에러를 `BadRequestError` , `UnauthorizedError` , `ForbiddenError` , `InternalServerError` , `NotFoundError` 로 나누어 class화 하고 Front-end가 처리할 수 있는 에러들에 대해선 ErrorCode들을 미리 enum type으로 정의해 둔 다음, 해당 에러에 맞는 class로 mapping하여  Front-end와 소통하였다.
+서버에서 발생할 수 있는 에러를 `BadRequestError` , `UnauthorizedError` , `ForbiddenError` , `InternalServerError` , `NotFoundError` 로 나누어 class화 하고 Front-end가 처리할 수 있는 에러들에 대해선 ErrorCode들을 미리 enum type으로 정의해 둔 다음, 해당 에러에 맞는 class로 mapping하여  Front-end와 소통하였습니다.
 
 [Custom Error를 이용한 Front-end와의 소통](https://velog.io/@gkqkehs7/Custom-Error%EB%A5%BC-%ED%86%B5%ED%95%9C-front-end%EC%99%80%EC%9D%98-%EC%86%8C%ED%86%B5)
 
@@ -63,7 +63,7 @@ REST의 원칙을 지켜 간결하고 가독성이 좋은 API를 설계하였고
 
 ### Winston.js를 통한 로그 기록
 
-`Winston.js`를 이용하여 서버에 들어오는 모든 요청, 서버에서 발생하는 모든 에러에 대해 파일로 기록하였다.
+`Winston.js`를 이용하여 서버에 들어오는 모든 요청, 서버에서 발생하는 모든 에러에 대해 파일로 기록하였습니다.
 
 [Winston.js를 통한 로그 기록하기](https://velog.io/@gkqkehs7/Winston%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%9C-logger)
 
@@ -71,7 +71,7 @@ REST의 원칙을 지켜 간결하고 가독성이 좋은 API를 설계하였고
 
 ### Discord.js를 통한 Exception Error 핸들링과 API 개선
 
-서버에서 발생하는 Exception Error에 대해 `Discord.js`를 통해 Discord로 메세지를 보내게 하여 바로 대응할 수 있도록 하였고, API소요시간을 계산하여 2000ms 이상 걸리는 API에 대해서 Discord로 메세지를 보내 로직을 개선할 수 있게 하였다.
+서버에서 발생하는 Exception Error에 대해 `Discord.js`를 통해 Discord로 메세지를 보내게 하여 바로 대응할 수 있도록 하였고, API소요시간을 계산하여 2000ms 이상 걸리는 API에 대해서 Discord로 메세지를 보내 로직을 개선할 수 있게 하였습니다.
 
   [API소요시간 계산하기](https://velog.io/@gkqkehs7/API-%EC%86%8C%EC%9A%94%EC%8B%9C%EA%B0%84-%EA%B3%84%EC%82%B0) | [Discord.js를 통한 Error-bot 만들기](https://velog.io/@gkqkehs7/Discord.js%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-Error-bot-%EB%A7%8C%EB%93%A4%EA%B8%B0)
 
@@ -99,7 +99,7 @@ REST의 원칙을 지켜 간결하고 가독성이 좋은 API를 설계하였고
 
 ## 🔍 Husky
 
-오류가 있는 코드나 lint에 맞지 않는 코드가 올라와 develop에 merge되는 것을 막기위해 `Husky` 를 사용하여 commit과 push에 정책을 적용했습니다.
+오류가 있는 코드나 lint에 맞지 않는 코드가 올라와 develop에 merge되는 것을 막기위해 `Husky` 를 사용하여 commit과 push에 정책을 적용하였습니다.
 
 ### pre-commit
 
@@ -140,7 +140,7 @@ Docker는 호스트 OS와 리소스를 공유하여 실행되어 가상화 방�
 
 ### .dockerignore를 이용한 이미지 경량화
 
-`.dockerignore` 에 Docker 이미지를 빌드할 때 포함하지 않을 파일이나 디렉토리를 지정하여, 이미지 크기를경량화 하였다.
+`.dockerignore` 에 Docker 이미지를 빌드할 때 포함하지 않을 파일이나 디렉토리를 지정하여, 이미지 크기를 경량화 하였습니다.
 
 [Docker 이미지 경량화 하기](https://velog.io/@gkqkehs7/Docker%EB%A1%9C-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%B9%8C%EB%93%9C-%EB%B0%8F-%EA%B2%BD%EB%9F%89%ED%99%94)
 
