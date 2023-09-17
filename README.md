@@ -122,6 +122,15 @@ REST의 원칙을 지켜 간결하고 가독성이 좋은 API를 설계하였고
 
 <br/>
 
+## 🔍 Jest
+
+Jest 라이브러리를 이용하여 API를 작성할때 해당 API에 대해서 테스트를 작성하여 버그를 빠르게 감지하고 코드의 안정성을 높였습니다. 
+또한 husky를 통해 push전에 테스트를 진행하여 테스트를 통과하지 못한 API가 있을시에 코드가 병합되지 않게 조치하였습니다.
+
+✏️ [Jest를 통한 테스트 주도 개발](https://velog.io/@gkqkehs7/jest%EB%A5%BC-%ED%86%B5%ED%95%9C-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%A3%BC%EB%8F%84-%EA%B0%9C%EB%B0%9C)
+
+<br/>
+
 ## 🔍 Docker
 
 ### 일관성 있는 배포
@@ -197,3 +206,33 @@ Winston.js로 기록한 우리 서버의 로그들을 기록한 폴더를 volume
 `nginx` 를 이용해 http로 80번 port에 들어온 요청들에 대해서 대리로 받은 다음, 443번 port로 redirect시켜서 보내주고. `reverse-proxy` 를 이용해 4000번에서 작동하고 있는 node.js서버로 요청이 가게 하였습니다. 이렇게 `리버스 프록시는(reverse-proxy)`를 통해 서버를 감추고, SSL/TLS 암호화를 사용하여 데이터를 안전하게 전송할 수 있게 하였습니다.
 
 ✏️ [Http와 Https 그리고 SSL은 각각 무엇일까?](https://velog.io/@gkqkehs7/HTTP%EC%99%80-HTTPS-%EA%B7%B8%EB%A6%AC%EA%B3%A0-SSL) | ✏️ [Nginx란 무엇이고 왜 사용할까?](https://velog.io/@gkqkehs7/nginx-web-server-was) | ✏️ [Nginx 설치 및 Https 적용하기](https://velog.io/@gkqkehs7/nginx-%EC%84%A4%EC%B9%98-%EB%B0%8F-https-%EC%A0%81%EC%9A%A9)
+
+<br/>
+
+## ⚒️ 문제해결 / 개선사항
+
+### static 변수 선언 때문에 환경변수가 로드되지 않던 문제 해결
+
+dotenv.config()를 프로젝트 최상단에 선언하였지만, 싱글턴으로 작성한 Redis를 연결하는 함수가 
+
+dotenv.config() 보다 먼저 실행되어, Redis에 연결이 되지 않는 현상이 발생하였습니다. 
+
+JavaScript에서 static 키워드를 사용하여 선언된 변수는 클래스가 로드될 때 기본적으로 초기화 된다는 사
+
+실을 알았고, 해당 변수를 인스턴스 변수로 수정하여 문제를 해결하였습니다.
+
+✏️ [staic으로 선언한 변수는 언제 로드되는가?](https://velog.io/@gkqkehs7/static%EB%A1%9C-%EC%84%A0%EC%96%B8%ED%95%9C-%EB%B3%80%EC%88%98%EB%8A%94-%EC%96%B8%EC%A0%9C-%EB%A1%9C%EB%93%9C%EB%90%98%EB%8A%94%EA%B0%80)
+
+<br/>
+
+### 4000ms 소요되던 API 1000ms로 단축
+
+Discord.js로 2000ms 이상 소요되는 API에 대해 알림을 보내도록 하였는데, 알림이 온 문제의 API에 대해
+
+생성/수정 보단 조회가 많이 일어나는 서비스임을 감안하여, 생성단에서 처리할 수 있는 작업은 Database 
+
+table에 새 column을 추가하는 작업을 통해 생성 및 수정시에 처리하였고, Promise.all의 병렬 처리를 이용
+
+하여 API 수행시간을 단축하였습니다.
+
+ ✏️ [Promise.all과 DB column추가로 인한 API 소요시간 단축](https://velog.io/@gkqkehs7/API%EC%86%8C%EC%9A%94%EC%8B%9C%EA%B0%84-%EA%B0%9C%EC%84%A0)
