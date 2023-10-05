@@ -29,9 +29,9 @@ REST의 원칙을 지켜 간결하고 가독성이 좋은 API를 설계하였고
 
 ### Controller와 Service의 역할 분리
 
-`Controller`와 `Service`의 역할을 철저히 분리하여 `Controller`는 클라이언트 요청을 처리하고 응답을 반환하는 역할을 수행하도록 하였고, `Service`는 비즈니스 로직을 처리하는 역할을 수행하도록 하였습니다.
+Node.js는 자유도가 매우 높기 때문에, Controller나 Service가 따로 분리되어 있지 않았습니다. 이에 MVC 패턴을 적용하여 Controller와 Service 분리하고 어플리케이션의 유지보수성, 확장성, 코드 재사용성을 향상시켰습니다.
 
-✏️ [Controller와 Service의 역할 분리](https://velog.io/@gkqkehs7/Controller%EC%99%80-Service-%EB%B6%84%EB%A6%AC)
+  ✏️ [MVC 패턴이란?](https://velog.io/@gkqkehs7/Node.js%EC%97%90-MVC-%ED%8C%A8%ED%84%B4-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0)
 
 <br/>
 
