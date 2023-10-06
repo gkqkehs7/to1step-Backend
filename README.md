@@ -27,7 +27,7 @@ REST의 원칙을 지켜 간결하고 가독성이 좋은 API를 설계하였고
 
 <br/>
 
-### Controller와 Service의 역할 분리
+### MVC패턴 적용
 
 Node.js는 자유도가 매우 높기 때문에, Controller나 Service가 따로 분리되어 있지 않았습니다. 이에 MVC 패턴을 적용하여 Controller와 Service 분리하고 어플리케이션의 유지보수성, 확장성, 코드 재사용성을 향상시켰습니다.
 
