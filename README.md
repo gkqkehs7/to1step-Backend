@@ -219,11 +219,11 @@ Winston.js로 기록한 우리 서버의 로그들을 기록한 폴더를 volume
 
 따라서 6379번의 방화벽을 차단하여 외부 접근은 막고 도커 네크워크를 이용해 서버와 레디스가 소통할 수 있도록 만들어 주었습니다.
 
-✏️ [서버 방화벽 강화하기](https://velog.io/@gkqkehs7/Redis%EC%9D%98-%EB%8D%B0%EC%9D%B4%ED%84%B0%EA%B0%80-%EC%82%AD%EC%A0%9C%EB%90%98%EB%8D%98-%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0)
+✏️ [방화벽 설정 때문에 redis의 데이터가 삭제되던 문제 해결](https://velog.io/@gkqkehs7/Redis%EC%9D%98-%EB%8D%B0%EC%9D%B4%ED%84%B0%EA%B0%80-%EC%82%AD%EC%A0%9C%EB%90%98%EB%8D%98-%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0)
 
 <br/>
 
-### Redis의 데이터가 매일 날라가버리던 문제 해결
+### 서버 방화벽 강화
 
 방화벽을 차단하여도, 계속해서 공격이 들어와 cloud단과 os단의 방화벽 규칙을 강화하여 서버에 적용하였습니다.
 
